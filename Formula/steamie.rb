@@ -7,19 +7,19 @@
 class Steamie < Formula
   desc "Terminal-native Steam client written in Rust"
   homepage "https://github.com/LargeModGames/steamie"
-  version "0.4.1"
+  version "0.4.2"
   license "MIT"
 
   depends_on :macos
 
   on_arm do
     url "https://github.com/LargeModGames/steamie/releases/download/v#{version}/steamie-macos-aarch64.tar.gz"
-    sha256 "f722137d0441146c3e04709308c5b624521eda27aecb69b00024fdfad41936a0"
+    sha256 "fed58dcda4a410999888844269716c5e3f81677539db57f0c5d51514b8ee8837"
   end
 
   on_intel do
     url "https://github.com/LargeModGames/steamie/releases/download/v#{version}/steamie-macos-x86_64.tar.gz"
-    sha256 "be7d5d3f81002bfcf88dd01dc9faeda742d42bc8c7dd33868a7dafa139fffb43"
+    sha256 "76e10bb58883f41074733f6fea42e76d348d66112e68ab45ec4565e25c23bb16"
   end
 
   def install
